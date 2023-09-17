@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbar {
+  min-height: 80px;
+}
+
+#basic-nav-dropdown {
+  font-size: medium;
+  font-weight: bold;
+}
+/* 
+#road-map {
+  margin-top: 10px;
+  margin-bottom: 20px;
+} */
+
+/* #card-text {
+  padding: "20px";
+  font-weight: "bold";
+  font-size: medium
+
+} */
