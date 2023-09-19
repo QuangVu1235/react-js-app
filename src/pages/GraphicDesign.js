@@ -34,6 +34,8 @@ import icon_hk7 from "../assets/images/learning-roadmap/icons/ICON-HOC-KY-07-153
 
 import hkss from "../assets/images/learning-roadmap/network-security/ANM_HKSS@2x.png";
 
+import imageWithForm from "../assets/images/learning-roadmap/design/1675322684139.jpeg"
+
 function GraphicDesign() {
   const imageLearning = [hk1, hk2, hk3, hk4, hk5, hk6, hk7];
 
@@ -135,12 +137,12 @@ function GraphicDesign() {
         <h1 className="text-center p-3">NỘI DUNG CHƯƠNG TRÌNH</h1>
         {iconsRoadMap.map((item) => IconRoadMapCompoment(item))}
       </Container>
-      <Row style={{ backgroundColor: "#f57e25", marginTop: "50px" }}>
+      <Row style={{ backgroundColor: "#088395", marginTop: "50px" }}>
         <Col>
           <Container className="p-4">
             <Row>
-              <Col lg={6}>{FormConfirm()}</Col>
-              <Col lg={6}>{FormConfirm()}</Col>
+              <Col lg={4}>{FormConfirm()}</Col>
+              <Col className="d-flex" lg={8}><Image src={imageWithForm} fluid /></Col>
             </Row>
           </Container>
         </Col>
