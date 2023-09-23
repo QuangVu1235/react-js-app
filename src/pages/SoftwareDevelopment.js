@@ -11,6 +11,8 @@ import ImageLearningRoadMap from "../components/ImageLearningRoadMap";
 import HeaderCompoment from "../components/HeaderCompoment";
 import BannerCompoment from "../components/BannerCompoment";
 import Footer from "../components/footer";
+import CarouselCompoment from "../components/carousel";
+import TabsComponent from "../components/TabsComponent";
 
 import banner from "../assets/images/learning-roadmap/learning-web/banner1.png";
 import benefit from "../assets/images/learning-roadmap/learning-web/LAP-TRINH.jpg";
@@ -41,55 +43,57 @@ function SoftwareDevelopment() {
   const iconsRoadMap = [
     [{
       icon: icon_hk1,
-      lablesLeft: ["Đại cương về CNTT", "Cơ sở lập trình"],
+      lablesLeft: ["Đại cương về CNTT", "Nhập môn lập trình", "Toán ứng dụng tin học"],
       lablesRight: [
-        "Kiến trúc máy tính và Hệ điều hành",
-        "Toán ứng dụng cho Tin học",
+        "Mạng căn bản",
+        "Kiến trúc máy tính và nguyên lý Hệ điều hành",
       ],
     },
     {
       icon: icon_hk2,
-      lablesLeft: ["Mạng máy tính căn bản", "Cấu trúc dữ liệu và giải thuật"],
+      lablesLeft: ["Kỹ thuật lập trình", "Lập trình hướng đối tượng"],
       lablesRight: [
-        "Ngôn ngữ lập trình Python",
-        "Luật ANM và đạo đức trong lĩnh vực CNTT",
+        "Ngôn ngữ lập trình C#/Java/PHP",
+        "Cơ sở dữ liệu",
+        "Đồ án 1",
       ],
     },],
     [{
       icon: icon_hk3,
-      lablesLeft: ["Mạng máy tính nâng cao", "Quản trị hệ thống mạng"],
+      lablesLeft: ["Cấu trúc dữ liệu và giải thuật", "Lập trình Web 1"],
       lablesRight: [
-        "An ninh mạng",
-        "Điện toán đám mây",
+        "Thiết kế Web 1",
+        "Nhập môn Công nghệ phần mềm",
       ],
     },
     {
       icon: icon_hk4,
-      lablesLeft: ["Bảo mật ứng dụng Web", "Kiểm thử An toàn thông tin"],
+      lablesLeft: ["Thiết kế Web 2", "Kiểm thử An toàn thông tin"],
       lablesRight: [
-        "Thâm nhập và phòng thủ",
-        "Mật mã và An toàn thông tin",
+        "Phân tích và thiết kế phần mềm",
+        "Kiểm thử phần mềm",
+        "Đồ án 2"
       ],
     },],
     [{
       icon: icon_hk5,
-      lablesLeft: ["Điều tra số", "Phân tích và Đánh giá An toàn thông tin"],
+      lablesLeft: ["Nhập môn Trí tuệ nhân tạo", "Kỹ năng nghề nghiệp"],
       lablesRight: [
-        "Bảo mật hệ thống thông tin",
-        "Hệ thống giám sát An toàn thông tin",
+        "Lập trình Web 3",
+        "Bảo mật Web và ứng dụng",
+        "Đồ án 3"
       ],
     },
     {
       icon: icon_hk6,
-      lablesLeft: ["Phân tích mã độc và kỹ thuật dịch ngược", "Ứng cứu sự cố an ninh mạng"],
+      lablesLeft: ["Thực tập tốt nghiệp"],
       lablesRight: [
-        "Ngôn ngữ lập trình Python",
-        "Luật ANM và đạo đức trong lĩnh vực CNTT",
+        "Chuyên đề hãng CN/DN",
       ],
     },],
     [{
       icon: icon_hk7,
-      lablesLeft: ["Thực tập tốt nghiệp", "Bảo vệ đồ án tốt nghiệp"],
+      lablesLeft: ["Bảo vệ đồ án tốt nghiệp"],
       lablesRight: [],
     },
     ]
@@ -99,6 +103,7 @@ function SoftwareDevelopment() {
     <>
       {HeaderCompoment()}
       {BannerCompoment(banner)}
+      {CarouselCompoment()}
 
       <Container>
         <Card.Text
@@ -119,6 +124,8 @@ function SoftwareDevelopment() {
           <Image style={{ width: "100%" }} src={benefit} />
         </Col>
       </Row>
+
+      {TabsComponent()}
 
       <h1 className="text-center c">ĐĂNG KÝ XÉT TUYỂN NGAY</h1>
 

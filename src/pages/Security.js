@@ -11,6 +11,8 @@ import ImageLearningRoadMap from "../components/ImageLearningRoadMap";
 import HeaderCompoment from "../components/HeaderCompoment";
 import BannerCompoment from "../components/BannerCompoment";
 import Footer from "../components/footer";
+import CarouselCompoment from "../components/carousel";
+import TabsComponent from "../components/TabsComponent";
 
 import banner from "../assets/images/banner.png";
 import benefit from "../assets/images/anningmang-loi-ich.jpg";
@@ -101,6 +103,7 @@ function NetworkSecurity() {
     <>
       {HeaderCompoment()}
       {BannerCompoment(banner)}
+      {CarouselCompoment()}
 
       <Card.Text
         className="text-center"
@@ -126,15 +129,23 @@ function NetworkSecurity() {
         cách rà soát và khắc phục tất cả các lỗ hổng/nguy cơ tiềm ẩn gây mất
         ATTT trong hạ tầng CNTT của các doanh nghiệp/ tổ chức.{" "}
       </Card.Text>
-
+      
       <Row>
         <Col>
           <Image style={{ width: "100%" }} src={benefit} />
         </Col>
       </Row>
 
+      {TabsComponent()}
+
       <Container>
         <h1 className="text-center p-3">LỘ TRÌNH HỌC</h1>
+        <Card.Text
+          style={{ fontWeight: "bold", fontSize: "18px", color: "#088395" }}
+        >
+          Thí sinh thuộc một trong các đối tượng sau sẽ đủ điều kiện trở thành
+          sinh viên của trường Cao đẳng SPACE:
+        </Card.Text>
 
         <Row>
           {[

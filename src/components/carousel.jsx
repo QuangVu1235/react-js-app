@@ -39,7 +39,7 @@ function CarouselCompoment() {
         { link: "software", images: software, cardTitle: "Tuyển sinh" , subTitle: "Tặng học bổng lên đến 8.000.000đ khi đăng kí khóa học"},
     ];
     return <Container>
-        <Carousel responsive={responsive} autoPlay={true}>
+        <Carousel responsive={responsive} autoPlay={true} >
         {urls.map((e) => <Card style={{ width: '18rem' }}>
                 <Card.Img  style={{height: "288px"}} variant="top" src={e.images}/>
                 <Card.Body>

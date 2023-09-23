@@ -12,6 +12,7 @@ import HeaderCompoment from "../components/HeaderCompoment";
 import BannerCompoment from "../components/BannerCompoment";
 import CarouselCompoment from "../components/carousel";
 import Footer from "../components/footer";
+import TabsComponent from "../components/TabsComponent";
 
 import banner from "../assets/images/learning-roadmap/design/design.png";
 import benefit from "../assets/images/anningmang-loi-ich.jpg";
@@ -42,55 +43,55 @@ function GraphicDesign() {
   const iconsRoadMap = [
     [{
       icon: icon_hk1,
-      lablesLeft: ["Đại cương về CNTT", "Cơ sở lập trình"],
+      lablesLeft: ["Đồ họa căn bản", "Mỹ thuật đồ họa", "Khoa học màu sắc"],
       lablesRight: [
-        "Kiến trúc máy tính và Hệ điều hành",
-        "Toán ứng dụng cho Tin học",
+        "Photoshop cơ bản",
+        "Trang trí đồ họa",
       ],
     },
     {
       icon: icon_hk2,
-      lablesLeft: ["Mạng máy tính căn bản", "Cấu trúc dữ liệu và giải thuật"],
+      lablesLeft: ["Nguyên lý thị giác", "Kỹ thuật nhiếp ảnh", "Illustrator"],
       lablesRight: [
-        "Ngôn ngữ lập trình Python",
-        "Luật ANM và đạo đức trong lĩnh vực CNTT",
+        "Photoshop nâng cao",
+        "Đồ án 1",
       ],
     },],
     [{
       icon: icon_hk3,
-      lablesLeft: ["Mạng máy tính nâng cao", "Quản trị hệ thống mạng"],
+      lablesLeft: ["In Design", "Kỹ thuật in", "Ý tưởng sáng tạo"],
       lablesRight: [
-        "An ninh mạng",
-        "Điện toán đám mây",
+        "Digital Marketing",
+        "Nghệ thuật chữ",
       ],
     },
     {
       icon: icon_hk4,
-      lablesLeft: ["Bảo mật ứng dụng Web", "Kiểm thử An toàn thông tin"],
+      lablesLeft: ["Thiết kế bao bì", "Thiết kế nhận dạng thương hiệu", "Thiết kế giao diện Web"],
       lablesRight: [
-        "Thâm nhập và phòng thủ",
-        "Mật mã và An toàn thông tin",
+        "Nguyên lý thiết kế đồ họa",
+        "Đồ án 2",
       ],
     },],
     [{
       icon: icon_hk5,
-      lablesLeft: ["Điều tra số", "Phân tích và Đánh giá An toàn thông tin"],
+      lablesLeft: ["Kỹ năng nghề nghiệp", "Kỹ thuật quay phim", "Xử lý phim – Adobe Premier"],
       lablesRight: [
-        "Bảo mật hệ thống thông tin",
-        "Hệ thống giám sát An toàn thông tin",
+        "Nguyên lý thiết kế nội thất",
+        "Autocad 2D",
+        "Dựng phối cảnh nội thất 3D – SketchUp"
       ],
     },
     {
       icon: icon_hk6,
-      lablesLeft: ["Phân tích mã độc và kỹ thuật dịch ngược", "Ứng cứu sự cố an ninh mạng"],
+      lablesLeft: ["Đồ án 3", "Thực tập tốt nghiệp"],
       lablesRight: [
-        "Ngôn ngữ lập trình Python",
-        "Luật ANM và đạo đức trong lĩnh vực CNTT",
+        "Chuyên đề hãng CN/DN",
       ],
     },],
     [{
       icon: icon_hk7,
-      lablesLeft: ["Thực tập tốt nghiệp", "Bảo vệ đồ án tốt nghiệp"],
+      lablesLeft: ["Bảo vệ đồ án tốt nghiệp"],
       lablesRight: [],
     },
     ]
@@ -103,7 +104,7 @@ function GraphicDesign() {
       {BannerCompoment(banner)}
 
       {CarouselCompoment()}
-
+      
       <Container>
         <Card.Text
           className="text-center p-5"
@@ -123,6 +124,8 @@ function GraphicDesign() {
           <Image style={{ width: "100%" }} src={benefit} />
         </Col>
       </Row>
+
+      {TabsComponent()}
 
       <Container>
         <h1 className="text-center p-3">LỘ TRÌNH HỌC</h1>
